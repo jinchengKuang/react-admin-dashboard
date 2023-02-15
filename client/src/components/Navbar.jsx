@@ -17,7 +17,7 @@ import {
 	Toolbar,
 	useTheme,
 } from '@mui/material';
-import profileImage from 'assests/profile.jpeg';
+import profileImage from 'assets/profile.jpeg';
 
 const Navbar = () => {
 	const dispach = useDispatch();
