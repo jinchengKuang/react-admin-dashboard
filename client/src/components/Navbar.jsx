@@ -19,7 +19,7 @@ import {
 } from '@mui/material';
 import profileImage from 'assets/profile.jpeg';
 
-const Navbar = () => {
+const Navbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
 	const dispach = useDispatch();
 	const theme = useTheme();
 	return (
@@ -33,7 +33,7 @@ const Navbar = () => {
 			<Toolbar sx={{ justifyContent: 'space-between' }}>
 				{/* LEFT SIDE */}
 				<FlexBetween>
-					<IconButton onClick={() => console.log('open/close')}>
+					<IconButton onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
 						<MenuIcon />
 					</IconButton>
 					<FlexBetween
